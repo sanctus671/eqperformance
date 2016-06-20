@@ -1,0 +1,24 @@
+<ion-view view-title="Create Team">
+  <ion-content>
+        <div class="list">
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">Team name</span>
+            <input ng-model="team.name" type="text" placeholder="Team name">
+          </label>
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">Password</span>
+            <input ng-model="team.password" type="password" placeholder="Password">
+          </label>
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">Master password</span>
+            <input ng-model="team.master_password" type="password" placeholder="Master password">
+          </label>
+            <div class="padding">
+                <button class="button button-block button-royal" ng-click="createTeam()">Create</button>
+            </div>
+        <div class="padding error" ng-show="error">
+            {{error}}
+        </div>              
+        </div>
+  </ion-content>
+</ion-view>

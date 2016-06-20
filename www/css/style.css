@@ -1,0 +1,122 @@
+/* Empty. Add your own CSS if you like */
+
+/*general styles */
+#main-header-bar{
+    display:none;
+}
+
+.error{
+    text-align:center;
+    color:red;
+}
+
+.padding > .button.button-block:first-child{
+    max-width:200px;
+        margin: 0 auto;
+        margin-top:20px;
+}
+
+
+/* login styles */
+ion-view[state=login]{
+        background-color: #966FD6;
+}
+
+.logo-image{
+    text-align:center;
+    margin-top:100px;
+    width:100%;
+}
+
+.logo-image img{
+    max-width:200px;
+
+}
+
+.login-buttons{
+    text-align:center;
+    width:100%;
+    margin-top:50px;
+}
+
+.login-buttons .button.button-block{
+    max-width:200px;
+    margin: 0 auto;
+    margin-top:20px;
+}
+
+.login-buttons .button.button-block.create-team{
+    background-color: rgba(255,255,255,0.8);
+}
+
+.login-buttons .button.button-block.join-team{
+    background-color: rgba(0,0,0,0.1);
+    color: white;
+}
+
+/*groups page styles */
+
+
+.login-buttons.login-buttons2{
+
+    margin-top:50px;
+    margin-bottom:50px;
+}
+
+.login-buttons.login-buttons2 .button.button-block.create-team{
+    background-color: rgba(150, 111, 214,1);
+    color:white;
+}
+
+.login-buttons.login-buttons2 .button.button-block.join-team{
+    background-color: rgba(135, 100, 193,0.8);
+    color: white;
+}
+
+/*group page styling */
+
+.rating-label{
+    font-weight:bold;
+    text-transform:capitalize;
+        padding-bottom: 0px;
+}
+
+.rating-range{
+    border-top:none;
+    padding-bottom: 10px;
+}
+
+.login-buttons.save-rating-buttons{
+
+    margin-top:20px;
+    margin-bottom:50px;
+}
+
+.login-buttons.save-rating-buttons .button.button-block.save-rating{
+    background-color: rgba(150, 111, 214,1);
+    color:white;
+}
+
+.login-buttons.save-rating-buttons .button.button-block.reset-rating{
+    background-color: rgba(135, 100, 193,0.5);
+    color: white;
+}
+
+/*tips page*/
+
+
+
+.tip-item, .tip-title{
+    text-transform:capitalize;
+}
+
+ul.rating-tip{
+    list-style: disc;
+     margin-left: 20px;
+}
+
+ul.rating-tip li{
+    text-align: left;
+  list-style: disc;
+  margin: 10px 0px;  
+}

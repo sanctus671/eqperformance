@@ -1,0 +1,29 @@
+<ion-view>
+    <ion-nav-title>
+        {{team.name}}
+    </ion-nav-title>
+    <ion-content>
+      <ion-refresher
+        pulling-text="Pull to refresh..."
+        on-refresh="doRefresh()">
+      </ion-refresher>  
+    <ion-list>
+       
+        <span ng-repeat="rating in ratings">
+        <div class="item rating-label">
+          {{rating.name}}
+        </div>             
+        <ion-item class="range range-royal rating-range" >
+            <input type="range" name="{{rating.name}}" min="0" max="10" ng-model="rating.rating" ng-disabled="team.manager">
+        </ion-item>  
+        </span>
+    </ion-list>
+        
+      <div class="login-buttons save-rating-buttons" ng-if="!team.manager">
+        <button class="button button-block button-light save-rating" ng-click="saveRatings()">Save</button>
+        <button class="button button-block button-light reset-rating" ng-click="resetRatings()">Reset</button>
+      </div>         
+    </ion-content>
+    
+    
+</ion-view>

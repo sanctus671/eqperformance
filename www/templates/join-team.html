@@ -1,0 +1,21 @@
+<ion-view view-title="Join Team">
+  <ion-content>
+    <div class="list">
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Team name</span>
+          <input ng-model="team.name" type="text" placeholder="Team name">
+        </label>
+        <label class="item item-input item-stacked-label">
+          <span class="input-label" ng-if="!team.is_manager">Password</span><span class="input-label" ng-if="team.is_manager">Master password</span>
+          <input ng-model="team.password" type="password" placeholder="Password">
+        </label>
+        <ion-checkbox ng-model="team.is_manager" class="checkbox-royal">Team manager</ion-checkbox>
+        <div class="padding">
+            <button class="button button-block button-royal" ng-click="joinTeam()">Join</button>
+        </div>
+        <div class="padding error" ng-show="error">
+            {{error}}
+        </div>        
+    </div>
+  </ion-content>
+</ion-view>
